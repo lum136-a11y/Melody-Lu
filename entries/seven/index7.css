@@ -1,0 +1,42 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font-family: sans-serif;
+  height: 100vh; NOTE: experiment with other fixed and responsive values;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  background-color: #333; NOTE: set your own background color;
+  color: white; NOTE: set your own text color;
+  padding: 1rem; NOTE: experiment with other fixed and responsive values;
+  text-align: center; NOTE: play with other alignments
+}
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px; NOTE: set your width;
+  background-color: blue; NOTE: set your own color;
+  padding: 1rem;
+}
+
+.main {
+  flex: 1;
+  background-color: yellow; NOTE: set your own color;
+  padding: 1rem;
+}
+
+footer {
+  background-color: red; Note: set your own color;
+}

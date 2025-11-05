@@ -1,0 +1,120 @@
+body {
+    background-image: linear-gradient(to bottom, #F9E66B, #E7CAFF, #D392FE);
+    padding: 50px;;
+    color: white;
+    font-family: "Gaisyer", sans-serif;
+}
+@font-face {
+    font-family: "Gaisyer";
+    src: url(fonts/ABCGaisyrMono-Book-Trial.woff2) format("woff2");
+}
+h1 {
+    font-size: 6em;
+}
+h3 {
+    font-size: 3em;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template: repeat(7, auto)/ repeat(7, auto);
+    font-size: 3em;
+    padding: 10px;
+}
+
+.grid-container div {
+    padding: 60px;
+    text-align: center;
+}
+
+@media all and (max-width: 2em) {
+    .grid-container div {
+        color: blue;
+    }
+}
+
+.item-1 {
+    grid-column: 4/ 5;
+    grid-row: 1/2;
+}
+.item-2 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+.item-3 {
+    grid-column: 6/7;
+    grid-row: 3/4
+}
+.item-4 {
+    grid-column: 7/8;
+    grid-row: 4/5
+}
+.item-5 {
+    grid-column: 6/7;
+    grid-row: 5/6
+}
+.item-6 {
+    grid-column: 5/6;
+    grid-row: 6/7
+}
+.item-7 {
+    grid-column: 4/5;
+    grid-row: 7/8
+}
+.item-8 {
+    grid-column: 3/4;
+    grid-row: 6/7
+}
+.item-9 {
+    grid-column: 2/3;
+    grid-row: 5/6
+}
+.item-10 {
+    grid-column: 1/2;
+    grid-row: 4/5
+}
+.item-11 {
+    grid-column: 2/3;
+    grid-row: 3/4
+}
+.item-12 {
+    grid-column: 3/4;
+    grid-row: 2/3
+}
+
+.center {
+    grid-area: 4/4/5/5;
+}
+
+
+.grid-container-2 {
+    display: grid;
+    grid-template: repeat(2, auto)/ repeat(2,auto);
+    font-size: 2em;
+    line-height: 120px;
+}
+.item-2-1 {
+    grid-column: 1/2;
+    text-align: flex-start;
+}
+.item-2-2 {
+    grid-column: 2/3;
+    text-align: flex-start;
+}
+
+ .nav{
+      display: flex; 
+      order: 4;
+      position: fixed;
+      bottom: 0px;
+      height: 5%;
+      width: 100%;
+      justify-content: left;
+      align-items: center;
+      font-style: bold;
+      font-size: 1.5em;
+      color: pink;
+    }
+    

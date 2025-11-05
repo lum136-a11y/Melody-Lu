@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px
+}
+
+h1{
+    color: white;
+    text-align: left;
+    font-size: 120px;
+}
+
+h2{
+    color: white;
+    text-align: left;
+    font-size: 40px;
+}
+
+h3{
+    color: white;
+    text-align: left;
+}
+
+h4{
+    color: white;
+    text-align: left;
+    padding-top: 10px;
+}
+
+p{
+    color: white;
+}
+img {
+    width: 600px;
+}
+
+.Habit {
+    font-size: 60px;
+    color: green;
+}
+.Class {
+    font-size: 120px;
+    color: yellow;
+}
+.Routine {
+    font-size: 126px;
+    text-align: right;
+    color: rgb(47, 109, 252)
+}
+.Random {
+    font-size: 300px;
+    text-align: center;
+    color: red
+}

@@ -1,0 +1,20 @@
+
+body {
+    background-color: #f4f2c6;
+    padding: 50px;
+}
+h1{
+    text-align: left;
+    color: #f8530ce1;
+    font-size: 120px;
+    font-style: italic;
+}
+h2{
+    text-align: left;
+    color: rgb(226, 193, 8);
+    font-size: 40px;
+}
+
+img {
+    width: 600px;
+}
