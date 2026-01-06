@@ -5,33 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>entry7</title>
     <link rel="stylesheet" href="entry7.css">
+    <link rel="stylesheet" href="../layout.css">
+    <script src="../jquery-3.7.1.js"></script> 
+    <script>
+        $(function(){
+            $("#menubox").load("../menu.html");
+            $("#myImage2").css("display","none");
+            $(".Btm").click(function(){
+                $("#myImage").css("display","none");
+                $("#myImage2").css("display","block")
+            })
+        })
+    </script>
 </head>
 <body>
 <!-- This is the code for page 1 -->
-    <div class="flex-container">
-    <div class="wrapper-1">
-    <h1>Activity Pattern</h1>
-    <h3>Reflection from entries 1 - 6</h3>
-    <div class="paragraph1-1">It's Week 10 of the fall 25, which 
-         is near the end of the semester. According to <br>
-         the brief schedule I've planned for myself at week 1, 
-         It's time to wrap up the <br>entries update and share
-         the thoughts I have from entreis 1 - 6. </div>
-    <div class="paragraph1-2">Scroll down to see more</div> 
-    </div>
+    <div id="menubox">
 
-    <div class="wrapper-2">
-        <div class="item-1">These are the links to <br>previous entries</div>
-        <div class="item-1-2">entry1</div>
-        <div class="item-1-3">entry2</div>
-        <div class="item-1-4">entry3</div>
-        <div class="item-1-5">entry4</div>
-        <div class="item-1-6">entry5</div>
-        <div class="item-1-7">entry6</div>
     </div>
-</div>
+    <header>
+        <div class="header-container">
+            <h1>Entry7: What is Important?</h1>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div>Yesterday, I searched time management online and discovered a video that
+            I found really helpful. It didn't recommend specific tools or techniques, 
+            but has pointed out that the key point for effective time management is 
+            to focus on what's importnat.</div>
+             <!-- <a href="#">
+        <img src="imgs/Less Important.jpg" alt="Image 1" class="img1"/>
+        <img src="imgs/Most Important.jpg" alt="Image 2" class="img2"/>
+    </a> -->
 
+    <img id="myImage" src="imgs/Most important.jpg" alt="Clickable image">
+    <img id="myImage2" src="imgs/Less important.jpg" alt="Clickable image">
+    <div class="Btm">Click</div>
+
+    <!-- <img src="imgs/tasks.jpg" alt="tasks">
+    <img src="imgs/Most important.jpg" alt="Most important">
+    <img src="imgs/Less Important.jpg" alt="Less Important"> -->
+        </article>
+        
+    <article><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Earum sapiente vel ut, incidunt in maiores! Dolores eos 
+        maiores quod, delectus sequi soluta nemo quas aut, deleniti 
+        animi id placeat alias?</p>
+        <img class= "pickbox" src="imgs/urgent.jpg" alt="Urgent"></article>
+    </main>
+   
 <!-- This is the code for page 2 -->
-     
+
 </body>
 </html>
