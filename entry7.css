@@ -1,0 +1,69 @@
+/* This is the code for page1 */
+header {
+  padding: 1rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+}
+
+.img1 {
+  display: block; /* Show the first image by default */
+}
+
+.img2 {
+  display: none; /* Hide the second image by default */
+}
+
+a:hover .img1 {
+  display: none; /* Hide the first image on hover */
+}
+
+a:hover .img2 {
+  display: block; /* Show the second image on hover */
+}
+
+
+.Btm {
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+.pickbox {
+  width: 80%;
+  height: auto;
+}
+
+#myImage, #myImage2 {
+  width: 80%;
+  height: auto;
+}
+
