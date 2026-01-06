@@ -1,0 +1,12 @@
+article {
+  width: 46%;
+  padding: 2%;
+  float: left;
+}
+
+@media (max-width: 600px) {
+  article {
+    width: 96%;
+    float: none;
+  }
+}

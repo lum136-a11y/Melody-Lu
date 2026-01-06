@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<link href="menu.css" rel="stylesheet" type="text/css">
+<script src="jquery-3.7.1.js"></script>
+<script>
+  $(function(){
+	  //
+	  $(window).resize(function(){
+		  var kevin = $(window).width()
+		  if(kevin<=800){
+			  $("#nn").css("display","none")
+		  }else{
+			  $("#nn").css("display","block")
+		  }
+	  })
+	  //
+	  $("#mm").click(function(){
+		  var mary = $("#nn").css("display")
+		  if(mary == "none"){
+			 $("#nn").css("display","block")
+			 }else{
+			 $("#nn").css("display","none")
+			 }
+	  })
+	  //
+	  $(".bb").mouseleave(function(){
+		  $(this).find(".ss").css("display","none")
+	  })
+	  //
+	  $(".bb").click(function(){
+		  $(".ss").css("display","none");
+		  var john = $(this).find(".ss").css("display")
+		  if(john == "none"){
+			 $(this).find(".ss").css("display","block")
+			 }else{
+			 $(this).find(".ss").css("display","none")
+			 }
+		  //$(this).find(".ss").css("display","block")
+		  //$(".ss").css("display","block")
+	  })
+	  //
+  })	
+</script>
+</head>
+
+<body>
+    <toggle id="mm">&equiv;</toggle>
+	<nav id="nn">
+	  <ul>
+		 <li><a href="#">關於設計</a></li>
+		 <li class="bb">
+			 <a href="#">關於旅行</a>
+			 <ol class="ss">
+			   <li><a href="#">北美洲</a></li>
+			   <li><a href="#">南美洲</a></li>
+			   <li><a href="#">歐洲</a></li>
+			   <li><a href="#">非洲</a></li>
+			 </ol>
+		 </li>
+		 <li class="bb">
+			 <a href="#">知識講堂</a>
+		     <ol class="ss">
+			   <li><a href="#">設計知識</a></li>
+			   <li><a href="#">旅行知識</a></li>
+			 </ol>
+		 </li>
+		 <li><a href="#">聯絡資訊</a></li>
+	  </ul>
+	</nav>
+</body>
+</html>
