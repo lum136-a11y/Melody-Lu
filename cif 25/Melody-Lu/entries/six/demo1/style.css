@@ -1,0 +1,44 @@
+*{
+  background-color: pink;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+/* h1 {
+  color: magenta;
+  font-size: 150px;
+} */
+
+/* default to border-box */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: coral;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+/* TRY COMMENTING OUT THE ABOVE CODE AND ACTIVATING THE CODE BELOW- WHAT HAPPENS? */
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+  width: 200px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+} */

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entry9</title>
+    <link rel="stylesheet" href="entry9.css">
+     <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="../menu.css">
+    <script src="../jquery-3.7.1.js"></script> 
+    <script>
+        $(function(){
+            $("#menubox").load("../menu.html");
+            $("#clickme").click(function(){
+              $("#boom").delay(2000).animate({opacity: "100%"})
+              $("#clickme").css("display","none");
+              $("#cover").css("height","100%");
+              // 每秒執行一次
+              setInterval(updateClock, 1000);
+              updateClock(); // 初始執行
+            })
+
+            function updateClock() {
+  const now = new Date();
+  
+  const seconds = now.getSeconds();
+  const minutes = now.getMinutes();
+  const hours = now.getHours();
+
+  // 計算角度
+  const secondDeg = (seconds / 60) * 360;
+  const minuteDeg = (minutes / 60) * 360 + (seconds / 60) * 6;
+  const hourDeg = (hours / 12) * 360 + (minutes / 60) * 30;
+
+  // 套用旋轉
+  document.getElementById('second').style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
+  document.getElementById('minute').style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
+  document.getElementById('hour').style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
+}
+
+
+
+        })
+        
+    </script>
+  <style>
+  .clock {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #333;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px auto;
+}
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom; /* 設定旋轉點在底部中心 */
+  background: #333;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: translateX(-50%) rotate(0deg);
+}
+.hour { width: 8px; height: 60px; }
+.minute { width: 6px; height: 90px; background: #666; }
+.second { width: 2px; height: 110px; background: #ff4136; }
+.center-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+
+<body>
+<div id="menubox"></div>
+<main>
+   <h1>Physical Condition</h1>
+    <article>
+          <div>For week 10, I've been hospitalized and detained from updating the entries.
+            Although it was an unfortunate experience, I did learned something worth noting 
+            in my project. 
+          </div>
+          <div>Staying in the hospital was boring. All electronics of mine were forfeited, which
+            made me completely separate from the internet. To entertain myself during this period, 
+            I chit-chatted with the patients and nurses several times. 
+          </div>
+          <div>One thing I remebered the most, was the reason that the patients are hospitalized.
+            The patients in the hospital came from different background and age group, but surprisingly,
+            I found that most of them worker who ranged from 20 to 30 years old. 
+          </div>
+          <div>
+            This situation was explained while I was chatting with a nurse. The nurse told me that
+            most patients was hospitalized because of overworking. 
+          </div>
+          <div id="container">
+            <img id="boom" src="imgs9/boom.png" alt="An Image Indicating the Booming Effect">
+            <div id="cover"></div>
+            <div id="clickme">Click</div>
+            <img src="SVG/brain.png" alt="A Brain Image">
+          </div>
+          <div>It pointed out an important element for a good time management - taking appropriate break.
+            
+          </div>
+    </article>
+    
+  <article>
+    </div>
+  <div class="clock">
+  <div class="hand hour" id="hour"></div>
+  <div class="hand minute" id="minute"></div>
+  <div class="hand second" id="second"></div>
+  <div class="center-dot"></div>
+      </div>
+      <!-- <div>Having an appropriate break is important,  -->
+  </article>
+
+  </main>
+
+      </body>
+</html>

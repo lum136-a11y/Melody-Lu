@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entry7</title>
+    <link rel="stylesheet" href="entry7.css">
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="../menu.css">
+    <script src="../jquery-3.7.1.js"></script> 
+    <script>
+        $(function(){
+            $("#menubox").load("../menu.html");
+            $("#myImage2").css("display","none");
+            $(".Btm").click(function(){
+                $("#myImage").css("display","none");
+                $("#myImage2").css("display","block")
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="menubox"></div>
+    <header>
+        <div class="header-container">
+            <h1>What is Important?</h1>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div>Yesterday, I searched time management online and discovered a video that
+            I found really helpful. It didn't recommend specific tools or techniques, 
+            but has pointed out that the key point for an effective time management is 
+            to focus on what's importnat.</div>
+            <img id="myImage" src="imgs/Most important.jpg" alt="An Image Indicating the Complete Outline of a Cartoon Bear">
+            <img id="myImage2" src="imgs/Less important.jpg" alt="An Image Indicating Partial Outline of the Cartoon Bear, After the Bottom Was Clicked">
+            <div class="Btm">Click</div>
+            <div>Using the two images above as an example, the most important thing represent OUTLINE
+                of an object; the less important thing represent DETAIL. If the most important 
+                thing is resolved prior to details, the entire plan will be more complete, which will
+                ease the process later on and make the steps more effective.
+            </div>
+        </article>
+        
+        <article><div>Besides the level of importance, the other thing that makes an effective
+            time management is urgency. I've encountered some situation that there're two 
+            equally important things happened simultaneously, which made me concern about 
+            the heavy workload.</div>
+        <img class= "pickbox" src="imgs/urgent.jpg" alt="A Venn Diagram Indicating the Priority of the Most Important and Urgent Thing ">
+            <div>To evaluate the priority of the important things, the urgency level should also 
+                be considered. According to the graph above, the most important and urgent thing 
+                should be resolved first. 
+            </div>
+        </article>
+    </main>
+</body>
+</html>

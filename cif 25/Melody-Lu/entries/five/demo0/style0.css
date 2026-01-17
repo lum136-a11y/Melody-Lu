@@ -1,0 +1,47 @@
+/* @font-face {
+    font-family: "GaisyerItalic";
+    src: url(fonts/ABCGaisyr-RegularItalic-Trial.woff2) format('woff2');
+} */
+
+/* @font-face {
+    font-family: "GaisyerMono"; /* This is an arbitrary name -- whatever works for you */
+    /* src: url(fonts/ABCGaisyrMono-Book-Trial.woff2) format('woff2');
+}   */ 
+   
+@font-face {
+    font-family: "myfont";
+    src: url(fonts/VG5000-Regular_web.woff) format('woff');
+}
+
+
+h1 {
+    font-family: "GaisyerMono", serif;
+}
+
+p {
+    font-family: "myfont", serif;
+}
+
+.poem {
+    border-style: dotted;
+    border-width: 7px;
+    padding: 50px;
+}
+  
+  
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+.flex-container > div {
+    width: 100%;
+    text-align: left;
+    line-height: 1.4;
+  
+}
+
+
+
+
+

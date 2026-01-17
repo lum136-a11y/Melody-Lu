@@ -1,0 +1,69 @@
+a {
+    text-decoration: none;
+    color: white
+}
+
+body {
+    background-image: url(imgs/Clock.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    color: linen;
+}
+
+h1 {
+    font-size: 18em;
+    line-height: 10px;
+    margin-left: 30px;
+    margin-top: 150px;
+}
+h2 {
+    font-size: 13em;
+    line-height: 150px;
+    margin-left: 290px;
+}
+h3 {
+    font-size: 9em;
+    line-height: 1px;
+    margin-left: 500px;
+}
+
+
+.title2 {
+    font-size: 9em;
+    margin-top: 190px;
+    text-align: left;
+    color: linen;
+}
+.flex-container-1 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: space-between;
+    height: 700px;
+}
+
+.flex-container-1 div {
+    font-size: 2em;
+    margin: 10px;
+    padding: 10px;
+    height: 70px;
+    color: linen;
+}
+
+.animated-text {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

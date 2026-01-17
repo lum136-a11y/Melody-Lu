@@ -1,0 +1,41 @@
+
+body {
+    background-color: #f4f2c6;
+    padding: 50px;
+}
+h1{
+    text-align: left;
+    color: #f8530ce1;
+    font-size: 120px;
+    font-style: italic;
+    padding-left: 30px;
+    line-height: 5px;
+}
+h2{
+    text-align: left;
+    color: rgb(226, 193, 8);
+    font-size: 40px;
+    padding-left: 30px;
+}
+
+img {
+    width: 550px;
+}
+p {
+    font-size: 17px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1.5px solid #bcbcbc;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #bcbcbc;
+}
+

@@ -1,0 +1,121 @@
+body {
+  line-height: 1.6;
+}
+@media screen and (min-width: 576px) {
+h1 {
+  font-size: 2em;
+  padding-left: 20px;
+}
+.wrapper-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.wrapper-1 div {
+  font-size: 1.5em;
+  width: 46%;
+  padding: 2%;
+}
+
+.wrapper-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.wrapper-2 div {
+  font-size: 2em;
+  width: 46%;
+  margin: 2%;
+  background-color: blanchedalmond;
+  padding-left: 70px;
+}
+
+.problem {
+  flex: 2;
+  order: 1;
+  text-align: flex-start;
+  line-height: 1.3em;
+}
+
+.improvement {
+  flex: 2;
+  order: 2;
+  text-align: flex-start;
+  line-height: 1.3em;
+}
+
+
+/* This is the code for page2 */
+p {
+  font-size: 2em;
+  text-align: end;
+  margin-right: 0.3em;
+}
+
+h3 {
+  font-size: 5em;
+  margin-left: 0.3em;
+}
+h2 {
+  font-size: 3em;
+  margin-top: -1em;
+  margin-left: 0.5em;
+  margin-bottom: 2em;
+}
+
+.ending {
+  font-size: 2em;
+  text-align: left;
+  margin-top: -1em;
+  margin-left: 0.5em;
+}
+}
+
+
+/* This is the code for mobile devices */
+@media screen and (max-width: 575px) {
+h1 {
+  font-size: 2em;
+}
+@font-face {
+  font-family: "FKGrotesk-Regular";
+  src: url(font/FKGroteskNeueTrial-Regular.woff) format("woff") ;
+}
+body {
+  font-family: "FKGrotesk-Regular";
+}
+.wrapper-1 {
+    display: flex;
+    flex-flow: column wrap;
+}
+.wrapper-2 {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1em;
+}
+
+.wrapper-2 div {
+  padding: 1em;
+  background-color: blanchedalmond;
+  width: 70%;
+  line-height: 1.5em;
+}
+h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+h2 {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  font-size: 1.6em;
+}
+}
+
+ol {
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 0.5em;
+}

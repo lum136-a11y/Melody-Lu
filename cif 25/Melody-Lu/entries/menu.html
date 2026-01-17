@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<link href="menu.css" rel="stylesheet" type="text/css">
+<script src="jquery-3.7.1.js"></script>
+<script>
+  $(function(){
+	  //
+	  $(window).resize(function(){
+		  var kevin = $(window).width()
+		  if(kevin<=800){
+			  $("#nn").css("display","none")
+		  }else{
+			  $("#nn").css("display","block")
+		  }
+	  })
+	  //
+	  $("#mm").click(function(){
+		  var mary = $("#nn").css("display")
+		  if(mary == "none"){
+			 $("#nn").css("display","block")
+			 }else{
+			 $("#nn").css("display","none")
+			 }
+	  })
+	  //
+	  $(".bb").mouseleave(function(){
+		  $(this).find(".ss").css("display","none")
+	  })
+	  //
+	  $(".bb").click(function(){
+		  $(".ss").css("display","none");
+		  var john = $(this).find(".ss").css("display")
+		  if(john == "none"){
+			 $(this).find(".ss").css("display","block")
+			 }else{
+			 $(this).find(".ss").css("display","none")
+			 }
+		  //$(this).find(".ss").css("display","block")
+		  //$(".ss").css("display","block")
+	  })
+	  //
+  })	
+</script>
+</head>
+
+<body>
+    <toggle id="mm">&equiv;</toggle>
+	<nav id="nn">
+	  <ul>
+		 <li><a href="../twelve/homepage.html">Home</a></li>
+		 <li class="bb">
+			 <a href="">Entries 1-6</a>
+			 <ol class="ss">
+			   <li><a href="../one/entry1.html">Entry1</a></li>
+			   <li><a href="../two/entry2.html">Entry2</a></li>
+			   <li><a href="../three/entry3.html">Entry3</a></li>
+			   <li><a href="../four/entry4.html">Entry4</a></li>
+			   <li><a href="../five/entry5/entry5.html">Entry5</a></li>
+			   <li><a href="../six/entry6.html">Entry6</a></li>
+			 </ol>
+		 </li>
+		 <li class="bb">
+			 <a href="#">Entries 7-11</a>
+		     <ol class="ss">
+			   <li><a href="../seven/entry7.html">entry7</a></li>
+			   <li><a href="../eight/entry8.html">Entry8</a></li>
+			   <li><a href="../nine/entry9.html">Entry9</a></li>
+			   <li><a href="../ten/entry10.html">Entry10</a></li>
+			   <li><a href="../eleven/entry11.html">Entry11</a></li>
+			 </ol>
+		 </li>
+	  </ul>
+	</nav>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* LET'S USE FLEX & LET THE CONTENT ROWS WRAP */
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+  }
+  
+  /* WRAPPER TAKES UP 100% OF THE SCREEN */
+  .wrapper {
+    flex: 1 100%;
+  } 
+  
+  /* blue border around the main content so we can see the space, you can delete this later but helpful to see while you are working */
+   .main {
+    border: 10px solid deepskyblue;
+  } 
+  
+  /* red border around the aside */
+  .aside-name-this-anything {
+    border: 10px solid red;
+  }
+  
+  /* your media query for big screens  */
+  @media all and (min-width: 800px) {
+    .main    { 
+      /* this says MAIN TAKES UP 3 COLUMNS > change this number to change width   */
+      flex: 10; 
+      /* this says MAIN IS 1st IN ORDER */
+      order: 1;
+      /*  this is all your font styling and positioning for MAIN    */
+      font-family: sans-serif;
+      text-align: left;
+      font-size: 4em;
+      font-weight: bold;
+      padding-left: 3em;
+      padding-top: 3em; 
+      padding-right: 1em;
+    }
+     
+    .aside-name-this-anything { 
+      /* this says ASIDE TAKES UP 1 COLUMN > change this number to change width   */
+      flex: 2; 
+      /* this says ASIDE IS 2ND ORDER */
+      order: 2;
+      /* this is all of the font styling and padding for ASIDE   */
+      font-family: serif;
+      padding: 1em;
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+  
+  

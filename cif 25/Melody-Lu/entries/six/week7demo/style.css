@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: rgb(14, 31, 78);
+  background-color: #feecc7;
+}
+
+
+.card {
+  width: 60%;       /* 60% of viewport width */
+  padding: 2rem;      /* Relative to root font size */
+  margin: 5vh auto;   /* Top/bottom margin: 5% of viewport height */
+  background-color: rgb(61, 194, 238);
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 90vw;
+    padding: 1rem;
+  }
+}

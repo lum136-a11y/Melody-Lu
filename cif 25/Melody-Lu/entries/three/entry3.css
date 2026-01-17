@@ -1,0 +1,114 @@
+body {
+    background-color: #7299D6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.65;
+    padding: 50px
+}
+h1{
+    color: #99dcfd;
+    font-size: 40px;
+    line-height: 1.2;
+}
+h2{
+    color: #99dcfd;
+    font-size: 24px;
+    line-height: 1.4;
+}
+h3{
+    color: #99dcfd;
+    font-size: 19px;
+    line-height: 1.5;
+}
+h4{
+    color: #99dcfd;
+    text-align: left;
+    padding-top: 19px;
+}
+
+p{
+    color: #99dcfd;
+}
+img {
+    width: 600px;
+}
+
+.Habit {
+    font-size: 16px;
+    color: green;
+}
+.Class {
+    font-size: 19px;
+    color: yellow;
+}
+.Routine {
+    font-size: 24px;
+    text-align: right;
+    color: rgb(47, 109, 252)
+}
+.Random {
+    font-size: 40px;
+    text-align: center;
+    color: red
+}
+
+header {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+main {
+    /* background-color: dimgray; */
+    padding-left: 30px;
+}
+main div {
+    color: #99dcfd;
+    font-size: 18px;
+    font-weight: 500;
+}
+ul li {
+  font-size: 17px;
+  line-height: 1.55;
+}
+#container {
+    margin-top: 10px;
+    width: 700px;
+    height: auto;
+}
+#container div {
+    width: 30%;
+    height: auto;
+    float: left;
+}
+#Btm {
+    width: 700px;
+    float: left;
+}
+#Btm div {
+    width: 30%;
+    height: auto;
+    float: left;
+}
+
+
+.text p {
+  line-height: 40px; /* 固定行距 */
+  margin: 0;
+}
+
+.small {
+  font-size: 24px;
+}
+.medium {
+  font-size: 30px;
+}
+.large {
+  font-size: 38px;
+}
+.Xlarge {
+    font-size: 48px;
+}
+.line {
+  border: none;
+  height: 1px;
+  background-color: #99dcfd;
+  margin: 20px 0;
+}

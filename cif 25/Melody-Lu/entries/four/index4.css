@@ -1,0 +1,20 @@
+body {
+    background-color: #ebe3e3;
+    padding: 50px;
+}
+h1{
+    text-align: center;
+    color: #146AEC;
+    font-size: 120px;
+    font-style: italic;
+}
+
+h3 {
+  font-family: Rubik, sans-serif;
+  font-size: 36px;
+}
+
+.poem {
+    font-family: "black-pack-vf",sans-serif;
+  font-variation-settings: 'wght' 100, 'wdth' 50, 'STRS' 0;
+}
