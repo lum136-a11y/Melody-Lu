@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts Behind NYC's Crowding</title>
+    <style>
+        body {
+            background-color: #fbfaf8;
+            margin: 0;
+        }
+        .flexbox {
+            /* background-color: rgb(251, 255, 0); */
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+            justify-content: space-between;
+        }
+        .flexbox .card {
+            background-color: rgb(10, 178, 10);
+            /* border: 1px solid black; */
+            /* margin-top: 150px; */
+            width: 33.33%;
+            height: 100%;
+            display: inline-block;
+            transition: transform 1.5s;
+            
+            position: relative;
+            transform-style: preserve-3d;
+        }
+        .front, .back {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+        }
+        .back {
+            transform: rotateY(180deg);
+            background-color: white;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Facts Behind <br>NYC's Crowding</h1>
+        </div>
+        <div class="nav">
+            <a href="About.html"><h3>About</h3></a>
+            <a href="Archive.html"><h3>Image Archive</h3></a>
+        </div>
+    </header>
+    <main>
+        <div class="flexbox"> 
+            <a href="Chapter1.html"></a>
+            <div class="card">
+                <div class="front">
+                    <a href="Chapter1.html"><img src="imgs/image1.jpg" alt="An Image Showing Crowds in NYC"></a></div>
+                <div class="back">Chapter Indicator</div>
+            </div>
+
+            <div class="card">
+                <div class="front">
+                    <a href="Chapter2.html"><img src="imgs/image2.jpg" alt="An Image Showing heavy smoke in NYC's Street"></a></div>
+                <div class="back">Chapter Indicator</div>
+            </div>
+
+            <div class="card">
+                <div class="front">
+                    <a href="Chapter3.html"><img src="imgs/image3.jpg" alt="An Image Showing Passengers Walking in Public Space"></a></div>
+                <div class="back">Chapter Indicator</div>
+            </div>
+        </div>
+    </main>
+    <script>
+   const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+        card.style.transform = "rotateY(180deg)";
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateY(0deg)";
+    });
+
+});
+</script>
+</body>
+</html>
