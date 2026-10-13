@@ -3,39 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facts Behind NYC's Crowding</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: lightcoral;
-            margin: 0;
-        }
-        .flexbox {
-            background-color: rgb(251, 255, 0);
-            display: flex;
-            flex-direction: row;
-            gap: 0;
-            justify-content: space-between;
-        }
-        .flexbox span {
-            background-color: rgb(10, 178, 10);
-            border: 1px solid black;
-            width: 33.33%;
-            height: 705px;
-            display: inline-block;
-        }
-    </style>
+    <title>Image Archive | Facts Behind NYC's Crowding</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="Archive.css">
 </head>
 <body>
     <header>
-        <div></div>
-    </header>
-    <main>
-        <div class="flexbox">               
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="title">
+            <a href="Project1.html"><h1>Facts Behind <br>NYC's Crowding</h1></a>
         </div>
+        <div class="nav">
+            <a href="Project1.html"><h3>Home Page</h3></a>
+        </div>
+    </header>
+
+    <main class="archive-panels">
+        <section class="archive-panel chapter-one" aria-labelledby="chapter-one-title">
+            <div class="panel-heading">
+                <p class="eyebrow">IMAGE ARCHIVE · 01</p>
+                <h2 id="chapter-one-title">People & Population</h2>
+                <a class="chapter-link" href="Chapter1.html">Explore Chapter 1</a>
+            </div>
+            <div class="gallery">
+                <figure><img src="imgs/chapter1_coverImage.jpg" alt="Crowds moving through a busy New York City street"><figcaption>Population and limited space</figcaption></figure>
+                <figure><img src="imgs/tourism-1.jpg" alt="Visitors in a busy New York City public space"><figcaption>Culture and place</figcaption></figure>
+                <figure><img src="imgs/tourism-2.jpg" alt="People sharing a public space in New York City"><figcaption>Everyday city life</figcaption></figure>
+            </div>
+        </section>
+
+        <section class="archive-panel chapter-two" aria-labelledby="chapter-two-title">
+            <div class="panel-heading">
+                <p class="eyebrow">IMAGE ARCHIVE · 02</p>
+                <h2 id="chapter-two-title">The Pressures of Crowding</h2>
+                <a class="chapter-link" href="Chapter2.html">Explore Chapter 2</a>
+            </div>
+            <div class="gallery">
+                <figure><img src="imgs/compete.jpg" alt="Traffic and competing uses of New York City streets"><figcaption>Traffic and street space</figcaption></figure>
+                <figure><img src="imgs/chapter2_coverimage.jpg" alt="A crowded urban scene illustrating competition for space"><figcaption>Shared city space</figcaption></figure>
+                <figure><img src="imgs/noise.jpg" alt="City activity contributing to urban noise"><figcaption>Noise pollution</figcaption></figure>
+                <figure><img src="imgs/Pollution.jpeg" alt="Air pollution in an urban environment"><figcaption>Environmental pollution</figcaption></figure>
+            </div>
+        </section>
+
+        <section class="archive-panel chapter-three" aria-labelledby="chapter-three-title">
+            <div class="panel-heading">
+                <p class="eyebrow">IMAGE ARCHIVE · 03</p>
+                <h2 id="chapter-three-title">Urban Design & Public Space</h2>
+                <a class="chapter-link" href="Chapter3.html">Explore Chapter 3</a>
+            </div>
+            <div class="gallery">
+                <figure><img src="imgs/chapter3_coverimage.jpg" alt="Bryant Park surrounded by Manhattan buildings"><figcaption>A green space in the city</figcaption></figure>
+                <figure><img src="imgs/Park-1.jpeg" alt="Visitors relaxing on the Bryant Park lawn"><figcaption>Gathering on the lawn</figcaption></figure>
+                <figure><img src="imgs/Park-2.jpeg" alt="Visitors sitting beneath the trees in Bryant Park"><figcaption>Seating beneath the trees</figcaption></figure>
+            </div>
+        </section>
     </main>
 </body>
 </html>
