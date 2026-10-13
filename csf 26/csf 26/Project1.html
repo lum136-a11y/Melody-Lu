@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts Behind NYC's Crowding</title>
+    <style>
+        body {
+            background-color: #fbfaf8;
+            margin: 0;
+            font-family: "GT-Standard-MCB";
+        }
+        .flexbox {
+            /* background-color: rgb(251, 255, 0); */
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+            justify-content: space-between;
+        }
+        .flexbox .card {
+            background-color: rgb(10, 178, 10);
+            /* border: 1px solid black; */
+            /* margin-top: 150px; */
+            width: 33.33%;
+            height: 100%;
+            display: inline-block;
+            transition: transform 1.5s;
+            
+            position: relative;
+            transform-style: preserve-3d;
+        }
+        .front, .back {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+        }
+        .back {
+            transform: rotateY(180deg);
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+            font-size: 80px;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .page-transition {
+            position: fixed;
+            inset: 0;
+            z-index: 3000;
+            background: rgba(251, 250, 248, 0.94);
+            animation: transition-fade-in 0.25s ease-out both;
+        }
+        .transition-title {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 5%;
+            width: 90%;
+            transform: translateY(-50%);
+            color: #263238;
+            font-size: clamp(28px, 5vw, 64px);
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-align: center;
+            animation: title-exit 0.7s ease-in 2.3s forwards;
+        }
+        .transition-title .title-line {
+            display: inline-block;
+            clip-path: inset(0 100% 0 0);
+            animation: title-line-reveal 0.9s linear forwards;
+        }
+        .chapter-two-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.08em;
+            color: #d32f2f;
+        }
+        .transition-title-travel {
+            animation: transition-title-travel 6.2s ease-in-out forwards;
+        }
+        .transition-title-travel .title-line {
+            clip-path: none;
+            animation: none;
+        }
+        .chapter-two-title .title-line {
+            animation-duration: 0.6s;
+        }
+        .chapter-two-title .title-line:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .chapter-two-title .title-line:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+        .chapter-two-title .title-line:nth-child(3) {
+            animation-delay: 1.2s;
+        }
+        .transition-person {
+            position: absolute;
+            z-index: 2;
+            left: -50px;
+            top: var(--transition-top);
+            width: 40px;
+            height: 78px;
+            animation: transition-walk 2.5s linear forwards;
+        }
+        .transition-person span {
+            position: absolute;
+            display: block;
+            background-color: #263238;
+        }
+        .transition-person .head {
+            width: 16px;
+            height: 16px;
+            left: 12px;
+            top: 0;
+            border-radius: 50%;
+        }
+        .transition-person .body {
+            width: 6px;
+            height: 30px;
+            left: 17px;
+            top: 18px;
+            border-radius: 4px;
+        }
+        .transition-person .arm,
+        .transition-person .leg {
+            width: 5px;
+            height: 25px;
+            left: 18px;
+            top: 20px;
+            border-radius: 4px;
+            transform-origin: top center;
+        }
+        .transition-person .arm {
+            animation: transition-arm 0.3s ease-in-out infinite alternate;
+        }
+        .transition-person .leg {
+            height: 30px;
+            top: 43px;
+            animation: transition-leg 0.3s ease-in-out infinite alternate;
+        }
+        .transition-person .leg-back {
+            animation-delay: -0.3s;
+        }
+        @keyframes transition-fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes transition-walk {
+            to { left: calc(100vw + 10px); }
+        }
+        @keyframes title-line-reveal {
+            from { clip-path: inset(0 100% 0 0); }
+            to { clip-path: inset(0 0 0 0); }
+        }
+        @keyframes title-exit {
+            100% { left: 110%; }
+        }
+        @keyframes transition-title-travel {
+            0% { left: -100%; }
+            16% { left: 5%; }
+            84% { left: 5%; }
+            100% { left: 110%; }
+        }
+        @keyframes transition-arm {
+            from { transform: rotate(-35deg); }
+            to { transform: rotate(35deg); }
+        }
+        @keyframes transition-leg {
+            from { transform: rotate(30deg); }
+            to { transform: rotate(-30deg); }
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+    <script src="Project1.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <span><h1>Into the Dense City</h1><div style="font-size: 30px;">Secrets Behind Crowding condition in NYC</div></span>
+        </div>
+        <div class="nav">
+            <a href="Archive.html"><h3>Image Archive</h3></a>
+        </div>
+    </header>
+    <main>
+        <div class="flexbox"> 
+            <a href="Chapter1.html"></a>
+            <div class="card">
+                <div class="front">
+                    <a href="Chapter1.html"><img src="imgs/image1.jpg" alt="An Image Showing Crowds in NYC"></a>
+                </div>
+                <div class="back"><a href="Chapter1.html">Chapter 1: <br>Reasons of Why <br>NYC is Crowded</a></div>
+            </div>
+
+            <div class="card">
+                <div class="front">
+                    <a href="Chapter2.html"><img src="imgs/image2.jpg" alt="An Image Showing heavy smoke in NYC's Street"></a>
+                </div>
+                <div class="back" style="padding-top: 70px;"><a href="Chapter2.html">Chapter 2: Environmental Issues Caused <br>by Crowding</a></div>
+            </div>
+
+            <div class="card">
+                <div class="front">
+                    <a href="Chapter3.html"><img src="imgs/image3.jpg" alt="An Image Showing Passengers Walking in Public Space"></a>
+                </div>
+                <div class="back" style="font-size: 74px; padding-top: 80px;"><a href="Chapter3.html">Chapter 3: <br>Solutions in Regard of the Crowding Issues</a></div>
+            </div>
+        </div>
+    </main>
+    <script>
+   const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+        card.style.transform = "rotateY(180deg)";
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateY(0deg)";
+    });
+
+});
+</script>
+</body>
+</html>
